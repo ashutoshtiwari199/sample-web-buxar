@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buxar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          sm: '480px',
+          md: '768px',
+          lg: '976px',
+          xl: '1440px'
+        },
+        extend: {
+          colors: {
+            black: '#000000',
+            mygrey: '#758283',
+            primarycolor: '#00BAF2',
+            darkblue: '#002970',
+            hovercardcolor: '#068cb4c9',
+            hovercarddarkblue: '#0745afaf'
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-100">
+  <nav class="flex w-full h-8 bg-sky-500/[.16] px-12 justify-between items-center	">
+    <ul class="flex justify-between w-full sm:w-1/6">
+      <li class="cursor-pointer">बिहार सरकार</li>
+      <li class="cursor-pointer ml-6">BIHAR GOVT</li>
+    </ul>
+    <ul class="w-1/3 justify-between hidden md:flex">
+      <li class="cursor-pointer">Skip to main content</li>
+      <li><i class="fa-solid cursor-pointer fa-magnifying-glass"></i></li>
+      <li><i class="fa-brands cursor-pointer fa-rocketchat"></i></li>
+      <li><i class="fa-brands cursor-pointer fa-facebook"></i></li>
+      <li><i class="fa-brands cursor-pointer fa-twitter"></i></li>
+    </ul>
+  </nav>
+  <nav class="flex justify-between  h-32 p-4 sm:pl-12">
+    <div class="flex w-full sm:w-1/6 justify-between sm:justify-around md:flex-row items-center">
+      <img src="https://cdn.s3waas.gov.in/s34f4adcbf8c6f66dcfc8a3282ac2bf10a/uploads/2018/02/2018022012.jpg" alt="">
+      <ul class="ml-6 flex flex-col items-center justify-normal pt-8">
+        <li>बक्सर</li>
+        <li>BUXAR</li>
+      </ul>
+    </div>
+    <img class="hidden md:block" src="https://cdn.s3waas.gov.in/s34f4adcbf8c6f66dcfc8a3282ac2bf10a/uploads/2017/07/2017072418.png" alt="">
+  </nav>
+
+  <nav class="bg-gray-900 text-white py-2 
+    h-10 container-fluid px-4 sm:px-20 w-[100vw] flex justify-between items-center 
+    ">
+    <!-- <div class="container mx-auto flex justify-center bg-sky-600
+          flex hidden sm:flex flex-row text-zinc-300 justify-evenly items-center w-11/12 text-[1.2em]
+    "> -->
+        <ul 
+        id="menu-items"
+        class="
+        ease-in-out	duration-900
+        absolute sm:relative bottom-20 z-10 sm:bottom-0
+        right-[100%] w-[100vw] top-0 sm:right-[0]
+        bg-slate-200 sm:bg-transparent bg-opacity-75 backdrop-blur
+        flex sm:flex flex-col sm:flex-row 
+        h-full w-full sm:h-[5vh] 
+        sm:text-zinc-200
+        text-zinc-700 
+        justify-around sm:justify-evenly 
+        items-left sm:items-center 
+        sm:w-11/12 
+        text-[2em] sm:text-[.9em]
+        ">
+        <i id="close-menu" class="hover:ease-in absolute top-12 text-slate-900  right-12 fa fa-close text-3xl sm:hidden "></i>  
+            <li><a href="#" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500">Places</a></li>
+            <li><a href="#" class="hover:text-blue-500">Services</a></li>
+            <li><a href="#" class="hover:text-blue-500">History</a></li>
+            <li><a href="#" class="hover:text-blue-500">Famous Figure</a></li>
+            <li><a href="#" class="hover:text-blue-500">Political</a></li>
+            <li><a href="#" class="hover:text-blue-500">About us</a></li>
+        </ul>
+      <!-- </div> -->
+      <!-- <li class="block bg-sky-200 text-zinc-300 ">Login</li> -->
+      <i class="fa fa-home text-[24px] sm:hidden" ></i>
+      <i id="hamburger-menu" class="fa fa-bars text-[24px] sm:hidden "></i>
+</nav>
+
+
+<!-- slider -->
+
+<!-- <section
+class="bg-sky-700 h-[60vh]"
+>
+  <div class="flex flex-row" >
+    <div class="slider bg-orange-900 w-[100vw]">
+      <img class="" src="assets/imageone.jpeg" alt="">
+    </div>
+    <div class="slider w-screen">
+      <img src="./assets/oneproduct.jpg" alt="">
+    </div>
+    <div class="slider">
+      <img src="assets/smarhanalay.jpg" alt="">
+    </div>
+    
+  </div>
+</section> -->
+<!-- main content -->
+
+<section class="bg-slate-200">
+
+<div class="flex flex-col justify-evenly sm:flex-row min-content-height my-8 my-[15vh]	">
+  <div class="left w-full sm:w-2/5">
+    <img class="h-full w-full rounded shadow-lg" src="./assets/merimati.jpeg" alt="">
+  </div>
+  <div class="right w-full sm:w-2/5 flex items-center">
+    <p class="m-2 italic font-light" >
+      "Meri Maati Mera Desh" encapsulates the profound connection an individual holds with their homeland. This evocative phrase symbolizes the deep-rooted attachment and loyalty one feels towards their native land. It reflects a sense of pride, shared history, and cultural heritage. The phrase embodies the essence of patriotism, where the earth beneath one's feet is not just soil, but a sacred bond that unites people and fosters a sense of belonging. "Meri Maati Mera Desh" resonates with the idea that the land on which we stand shapes our identity, values, and aspirations, and it's our collective responsibility to nurture and protect it.  
+    </p>
+    </div>
+</div> 
+
+<div class="flex flex-col-reverse sm:flex-row justify-evenly my-[15vh] h-[60vh]	">
+  <div class="right w-full sm:w-2/5 flex items-center">
+    <p class="m-2 italic font-light	" >
+      Sonchur Rice of Buxar, Bihar: A Culinary Marvel
+      Nestled in the heart of Bihar, the region of Buxar is renowned for its culinary gem - Sonchur Rice. This indigenous rice variety is a symbol of heritage and sustenance for the locals. Grown in the fertile lands along the Ganges, Sonchur Rice boasts a distinct aroma and unique taste. Its slender grains absorb flavors impeccably, making it an ideal choice for traditional dishes. Rich in nutrients and cherished for generations, this rice variety not only nourishes the body but also keeps culinary traditions alive. Sonchur Rice is a testament to the agricultural bounty and cultural richness of Buxar, Bihar.    </p>
+    </div>
+      <div class="left w-full sm:w-2/5">
+        <img class="h-full w-full rounded shadow-lg" src="./assets/sonchurrice.webp" alt="">
+      </div>
+</div> 
+
+
+<div class="flex flex-col sm:flex-row justify-evenly my-[15vh]">
+  <div class="right w-full sm:w-2/5 flex items-center">
+    <img class="h-full w-full rounded shadow-lg" src="./assets/smarhanalaysmall.jpg" alt="">
+  </div>
+  <div class="right w-full sm:w-2/5 flex items-center ">
+    <p class="m-2 italic font-light" >
+      "Meri Maati Mera Desh" encapsulates the profound connection an individual holds with their homeland. This evocative phrase symbolizes the deep-rooted attachment and loyalty one feels towards their native land. It reflects a sense of pride, shared history, and cultural heritage. The phrase embodies the essence of patriotism, where the earth beneath one's feet is not just soil, but a sacred bond that unites people and fosters a sense of belonging. "Meri Maati Mera Desh" resonates with the idea that the land on which we stand shapes our identity, values, and aspirations, and it's our collective responsibility to nurture and protect it.  
+    </p>
+    </div>
+</div> 
+
+</section>
+
+
+<!-- Tourist Place -->
+<section class="px-2 pt-4 bg-slate-100">
+  <h1
+  class="text-4xl text-center font-light	"
+  >
+    Tourist Places
+  </h1>
+  <div class="tourist-place flex flex-col sm:flex-row justify-around p-4 min-content-height">
+    <div class="cards cursor-pointer hover:hover:scale-105 ease-in-out duration-300 shadow-lg rounded w-full sm:w-[20vw] border border-orange-500 p-3 flex flex-col justify-evenly my-4">
+      <h3 class="text-xl italic">
+        Chausa Battle field
+      </h3>
+      <img class="h-1/3 rounded shadow-lg" src="./assets/chausabattle.jpg" alt="">
+      <p class="prose">
+        Chausa, Bihar, witnessed the 1539 battle between Sher Shah Suri and Humayun, shaping history with Sher Shah's triumph, a testament to valor and strategy.</p>
+    </div>
+    <div class="cards cursor-pointer hover:hover:scale-105 ease-in-out duration-300 rounded w-full sm:w-[20vw] border border-orange-500 p-3 flex flex-col justify-evenly my-4">
+      <h3 class="text-xl italic">
+        Bihari Ji Temple
+      </h3>
+      <img class="h-1/3 rounded shadow-lg" src="./assets/bihariji.jpg" alt="">
+      <p class="prose">
+        The Bihari Ji Temple stands as a sacred haven in the heart of Rajasthan, dedicated to Lord Krishna, radiating devotion and spiritual solace through its timeless architecture.    
+      </p>
+      </div>
+    <div class="cards cursor-pointer hover:hover:scale-105 ease-in-out duration-300 rounded w-full sm:w-[20vw] border border-orange-500 p-3 flex flex-col justify-evenly my-4">
+      <h3 class="text-xl italic">
+        Katkauli ka maidan
+      </h3>
+      <img class="h-1/3 rounded shadow-lg" src="./assets/katkauli.jpg" alt="">
+      <p class="prose">
+        Katkauli Ka Maidan, Bihar: A historic arena where voices of change resonated. It witnessed movements that shaped Bihar's sociopolitical, inspiring generations towards progress.    
+      </p>
+      </div>
+  </div>
+</section>
+
+
+<!-- Public Figurs -->
+
+<section>
+
+
+
+</section>
+
+<!-- About Us -->
+
+<section class="px-2 pt-4 mt-12">
+  
+  <div class="flex flex-col sm:flex-row justify-evenly items-center py-4 h-[70vh]">
+    <div class="right w-full sm:w-2/5 flex items-center rounded border h-full">
+        <div class="mapouter rounded"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=banglore&t=&z=4&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+    </div>
+    <div class="right w-full sm:w-2/5 flex flex-col items-left p-4">
+      <h1 class="text-4xl styled-text">BCTech: Your IT Solutions Partner</h1>
+      <p class="font-light my-4" >
+        Your technology growth partner. We innovate with excellence, delivering bespoke solutions in software, web design, cybersecurity, and the cloud. Our skilled team ensures efficiency, user experiences, and digital security, propelling businesses forward.
+        Our team of skilled professionals brings a diverse range of expertise, enabling us to deliver tailor-made solutions that cater to your unique needs. Transform with us.      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="bg-gray-900 text-white py-2 inset-x-0 bottom-0">
+  <div class="container mx-auto text-center">
+      <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
